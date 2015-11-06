@@ -6,10 +6,10 @@ use Books\Connectors\AllegroApiConnector as Connector;
 $app = new Silex\Application();
 $app['debug'] = true;
 
-return Connector::fetchEbooksList();
-$app->get('/books', function () use ($app) {
+return Connector::getWebApiKey();
+$app->get('/getkey', function () use ($app) {
 
-    return $app->json(Connector::fetchEbooksList());
+    return $app->json(Connector::getWebApiKey());
 });
 
 $app->run();
