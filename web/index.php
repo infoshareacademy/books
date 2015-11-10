@@ -27,4 +27,11 @@ $app->get('/', function () use ($app) {
     return $app->json($result['itemList']->itemsList);
 });
 
+$app->get('/ebooksList', function () use ($app) {
+
+    $service_url = 'http://localhost:8888/';
+
+    return new \Symfony\Component\HttpFoundation\Response($result);
+});
+
 $app->run();
