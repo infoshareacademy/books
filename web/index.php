@@ -20,7 +20,13 @@ $app->get('/', function () use ($app) {
             'filterValueId' => [5893]
         ]],
         'countryId' => 1,
-        'webapiKey' => $webapiKey
+        'webapiKey' => $webapiKey,
+        'resultSize' => 1000,
+        'resultOffset' => 800,
+        'sortOptions' => [
+        'sortType' => 'name',
+        'sortOrder' => 'asc'
+],
     ]);
 
 
