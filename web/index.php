@@ -17,7 +17,7 @@ $app->get('/', function () use ($app) {
     $result['itemList'] = $soapClient->doGetItemsList([
         'filterOptions' => [[
             'filterId' => 'category',
-            'filterValueId' => [5893]
+            'filterValueId' => [250802]
         ]],
         'countryId' => 1,
         'webapiKey' => $webapiKey,
