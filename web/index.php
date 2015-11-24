@@ -17,12 +17,11 @@ $app->get('/', function () use ($app) {
     $result['itemList'] = $soapClient->doGetItemsList([
         'filterOptions' => [[
             'filterId' => 'category',
-            'filterValueId' => [250802]
+            'filterValueId' => [250817]
         ]],
         'countryId' => 1,
         'webapiKey' => $webapiKey,
         'resultSize' => 1000,
-        'resultOffset' => 800,
         'sortOptions' => [
         'sortType' => 'name',
         'sortOrder' => 'asc'
